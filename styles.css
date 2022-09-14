@@ -1,0 +1,231 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto';
+}
+.container {
+    min-width: 300px;
+    margin: auto;
+}
+.site-nav {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+}
+.site-nav__link {
+    display: none;
+}
+.fa-bars {
+    font-size: 22px;
+    padding-right: 25px;
+}
+.hero {
+    position: relative;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+    padding: 0 10px;
+    margin-top: 60px;
+    background: hsla(0,0%,100%,.1);
+    background: linear-gradient(90deg,#7250d5 0,#aa47a5 50%,#f43a67 99%);
+}
+.hero-head {
+    color: white;
+    font-size: 22px;
+    padding-top: 40px;
+    text-align: center;
+    letter-spacing: 1px;
+    line-height: 30px;
+}
+.hero-img {
+    width: 280px;
+    border: 3px solid #fff;
+}
+.section {
+    text-align: center;
+    padding: 0 9px;
+    padding-top: 125px;
+    padding-bottom: 30px;
+    line-height: 28px;
+}
+.section__code {
+    color: dodgerblue;
+    padding-bottom: 30px;
+}
+.section__head {
+    font-size: 30px;
+    padding: 0 25px;
+    padding-bottom: 30px;
+    line-height: 35px;
+}
+.section__text {
+    font-size: 18px;
+    letter-spacing: .5px;
+}
+.site-subscribe {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 50px;
+    justify-content: space-around;
+}
+.site-subscribe__item {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 15px;
+}
+.site-subscribe-number {
+    font-size: 40px;
+    color: dodgerblue;
+}
+.site-love {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.site-love__head {
+    margin: 40px 0;
+    margin-top: 80px;
+}
+.site-love__text {
+    margin-bottom: 40px;
+}
+.padding {
+    padding: 0px 40px;
+}
+.site-love__img {
+    padding: 30px;
+}
+.site-users {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    padding: 50px 0;
+    background: #F5F5F5;
+}
+.site-users__item {
+    margin: 0 15px;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0px 0px 15px 0px rgb(208, 200, 200);
+    /* border: 1px solid #000; */
+    background: #fff;
+}
+.flex {
+    display: flex;
+    gap: 7px;
+}
+.site-users__link {
+    text-decoration: none;
+    color: #999;
+}
+.site-users__img {
+    width: 50px;
+    border-radius: 100px;
+}
+.site-users__text {
+    color: #232538;
+    padding-top: 20px;
+    line-height: 25px;
+}
+@media (min-width: 768px) {
+    .hero {
+        height: 80vh;
+    }
+    .hero-head {
+        font-size: 44px;
+        line-height: 51px;
+    }
+    .hero-img {
+        width: 721px;
+    }
+    .section {
+        padding-top: 200px;
+    }
+    .site-users {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .site-users__item {
+        width: 335px;
+        margin: auto;
+    }
+}
+@media (min-width: 1024px) {
+    .Dnone {
+        display: none;
+    }
+    .site-nav {
+        padding: 0px 30px;
+    }
+    .site-nav__hover {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .site-nav__link {
+        display: block;
+        text-decoration: none;
+        color: #707070;
+    }
+    .site-nav__btn {
+        font-weight: 500;
+        padding: 10px 20px;
+        border-radius: 30px;
+        background: #A046D3;
+        color: white;
+        border: none;
+    }
+    .hero-head {
+        padding-top: 130px;
+    }
+    .section {
+        padding-top: 230px;
+    }
+    .section__text {
+        padding: 0 150px;
+    }
+    .site-subscribe {
+        justify-content: space-evenly;
+    }
+    .site-love__img {
+        height: 593px;
+    }
+    .site-users {
+        padding: 50px 100px;
+    }
+    .site-users__item {
+        width: 385px;
+    }
+}
+@media (min-width: 1440px) {
+    .site-nav {
+        padding: 0 150px;
+    }
+    .hero-head {
+        margin: 0 300px;
+    }
+    .section__text {
+        margin: 0 250px;
+    }
+    .site-subscribe {
+        justify-content: center;
+        gap: 70px;
+    }
+    .site-love__img {
+        padding: 0 200px;
+        color: #50456e;
+    }
+    .site-users {
+        padding: 50px 250px;
+    }
+}
